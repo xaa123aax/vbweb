@@ -1,0 +1,17 @@
+﻿      SQL 指令查詢
+
+學號：ADT105112          姓名：邱奕畯
+
+A.如果要使用SQL指令，輸出 personal 資料表的所有資料，SQL指令為何?
+
+SELECT * FROM personal
+
+B.如果要使用SQL指令，輸出 Score 資料表的所有資料，SQL指令為何?
+
+SELECT * FROM Score
+
+
+C.如果要使用SQL指令，輸出 personal 和 score 資料表中，
+  在 personal的學號、姓名與score的國文、英文、數學資料，SQL指令如何下達呢?
+
+SELECT personal.學號, personal.姓名, score.國文, score.英文, score.數學 FROM personal, score WHERE personal.學號=score.學號
